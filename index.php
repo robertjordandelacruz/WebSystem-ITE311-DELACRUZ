@@ -2,6 +2,7 @@
 
 use CodeIgniter\Boot;
 use Config\Paths;
+$_SERVER['CI_ENVIRONMENT'] = 'development';
 
 /*
  *---------------------------------------------------------------
@@ -48,7 +49,7 @@ if (getcwd() . DIRECTORY_SEPARATOR !== FCPATH) {
 
 // LOAD OUR PATHS CONFIG FILE
 // This is the line that might need to be changed, depending on your folder structure.
-require FCPATH . '../app/Config/Paths.php';
+require FCPATH . 'app/Config/Paths.php';
 // ^^^ Change this line if you move your application folder
 
 $paths = new Paths();
